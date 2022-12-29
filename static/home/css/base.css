@@ -1,0 +1,20 @@
+body{
+    background-color: lightgoldenrodyellow;
+    background-image: url('home/images/paper.jpeg');
+}
+.info_img{
+    margin-left: 80%;
+}
+.info_header{
+    color: saddlebrown;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.info_content{
+    color: darkgoldenrod;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.info_values{
+    color: black;
+}
