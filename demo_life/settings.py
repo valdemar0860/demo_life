@@ -71,7 +71,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'demo_life.wsgi.application'
 
 # ALLOWED_HOSTS = os.environ.get('SERVERNAMES').split(' ')
-ALLOWED_HOSTS = ['http://vovadmin.pythonanywhere.com/']
+ALLOWED_HOSTS = ['vovadmin.pythonanywhere.com']
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
