@@ -10,7 +10,15 @@
     <link rel="stylesheet" href="{% static 'home/css/base.css' %}">
 </head>
 <body>
-    {% block content %}
-    {% endblock content %}
+    <header>
+        <img class="logo_img" src="{% static 'home/images/logo.png' %}">
+        <div class="signin_signup">
+            <button onkeypress="{% url_for('signup') %}">Sign up</button>
+        </div>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock content %}
+    </main>
 </body>
 </html>
