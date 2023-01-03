@@ -1,7 +1,8 @@
 {% extends 'home/base.html' %}
+{% load static %}
 
 {% block title %}main{% endblock title %}
 
 {% block content %}
-    <a href="http://localhost:8000/info/"><img class="info_img" src="../static/home/images/info.png"></a>
+    <a href="{% url 'info' %}"><img class="info_img" src="{% static 'home/images/info.png' %}"></a>
 {% endblock content %}

@@ -24,7 +24,8 @@ SECRET_KEY = 'django-insecure-jek)u_!jxd!^xhqf&*2j+0cin@88qnyxc493i44nlrk5--_90$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['vovadmin.pythonanywhere.com',
+                 ]
 
 # Application definition
 
@@ -127,4 +128,4 @@ else:
     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
     # ALLOWED_HOSTS = os.environ.get('SERVERNAMES').split(' ')
-    ALLOWED_HOSTS = ['vovadmin.pythonanywhere.com']
+    # ALLOWED_HOSTS = ['vovadmin.pythonanywhere.com']
