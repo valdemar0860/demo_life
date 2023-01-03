@@ -13,7 +13,7 @@
     <header>
         <img class="logo_img" src="{% static 'home/images/logo.png' %}">
         <div class="signin_signup">
-            <button onkeypress="{% url_for('signup') %}">Sign up</button>
+            <a href="{% url 'signup' %}"><button>Sign up</button></a>
         </div>
     </header>
     <main>

@@ -70,8 +70,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'demo_life.wsgi.application'
 
-# ALLOWED_HOSTS = os.environ.get('SERVERNAMES').split(' ')
-ALLOWED_HOSTS = ['vovadmin.pythonanywhere.com']
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
@@ -127,3 +125,6 @@ if DEBUG:
     STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 else:
     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+    # ALLOWED_HOSTS = os.environ.get('SERVERNAMES').split(' ')
+    ALLOWED_HOSTS = ['vovadmin.pythonanywhere.com']
