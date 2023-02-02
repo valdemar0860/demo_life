@@ -22,10 +22,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-jek)u_!jxd!^xhqf&*2j+0cin@88qnyxc493i44nlrk5--_90$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['vovadmin.pythonanywhere.com',
-                 ]
+ALLOWED_HOSTS = [
+    'vovadmin.pythonanywhere.com',
+    '127.0.0.1',
+]
 
 # Application definition
 

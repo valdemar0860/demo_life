@@ -2,14 +2,11 @@
 
 {% block title %}info{% endblock title %}
 
-{% block content %}
+<!--
     <header class="info_header">
         <h1>Ласкаво прошу Вас, на ресурсі, що має допомогти мені, а можливо і Вам, розібратись у складних відносинах між людьми і взагалі у тому, як правильно жити життя)</h1>
     </header>
     <main class="info_content">
-        <h2>Концепція буде заснована на теорії ігор, з деякою адаптацією (за основу буде братись багато різних жанрів вже існуючих комп'ютерних ігор), а також теорії потреб Маслоу.</h2>
-        
-        <h2 style="text-align: center">Для початку, потрбіно сформулювати піраміду Маслоу:</h2>
         <div class="info_values">
             <h3 style="padding-left: 25%; background-color: lightcoral">Потреби в самовираженні, самореалізації — потреби у здійсненні своїх потенційних можливостей та зростанні як особистості.</h3>
 
@@ -71,9 +68,44 @@
 
             <h3>Потреба у повазі та увазі, чаще всього використовується для отримання корисних зв'язків та покращення характеристики переконливості, тому що цю потребу досить важко використовувати для широких мас гравців.</h3>
 
-            <h3>Потреба у самовираженні часто називаєма просто амбіціями людини. Так як ця потреба знаходиться на самій вершині піраміди - це сама неважлива для багатьох гравців потреба, багато гравців взагалі не мають такої потреби. Але Вам, як гравцю цієї гри, необхідно дуже обережно відноситись до цієї потреби, так як чаще усього саме ваші конкуренти будуть схильні до цієї потреби, і сподіваюсь що у вас також є така потреба. Щоб задовольнити цю потребу доведеться докласти зусиль (але, на суб'єктивну думку автора, від задоволення цієї потреби найбільший фідбек).</h3>
+            <h3>Потреба у самовираженні часто називаєма просто амбіціями людини. Так як ця потреба знаходиться на самій вершині піраміди - потребу цю відчувають лише люди, що задовольнили усі попередні, але ми живемо в 21 сторіччі, і небагато людей зараз знають що таке голод, тому саме цю потребу, знають люди те, чи ні, вони хочуть задовольнити найбільше.</h3>
         </div>
         <h1 style="text-align: center; color: gold">І мало грати красиво - треба виграти цю гру.</h1>
 
     </main>
+-->
+
+{% block content %}
+    <h1 style="text-align: center; height: 60px; margin-top: 15px">Піраміда Маслоу</h1>
+    <div class="w-25 p-3" style="background: rgb(31, 31, 33); border-radius: 30px; margin-left: 37%" >
+        Потреби в самовираженні, самореалізації — потреби у здійсненні своїх потенційних можливостей та зростанні як особистості.
+    </div>
+    <div class="w-50 p-3" style="background: rgb(31, 31, 33); border-radius: 30px; margin-left: 25%">
+        Потреби в повазі — маються на увазі потреби в особистих досягненнях, компетентності, повазі з боку оточення, визнанні.
+    </div>
+    <div class="w-75 p-3" style="background: rgb(31, 31, 33); border-radius: 30px; margin-left: 12%">
+        Соціальні потреби (потреби в приналежності, дружбі, любові) передбачають відчуття приналежності до чого-небудь або кого-небудь, підтримки.
+    </div>
+    <div class="w-100 p-3" style="background: rgb(31, 31, 33); border-radius: 30px;">
+        Потреби в безпеці стосуються потреб в захисті від фізичних і психологічних небезпек з боку навколишнього світу і впевненість у тому, що фізіологічні потреби будуть задовольнятися в майбутньому.
+    </div>
+    <div class="w-auto p-3" style="background: rgb(31, 31, 33); border-radius: 30px;">
+        Фізіологічні потреби (потреби найнижчого рівня) є необхідними для виживання. Вони охоплюють потребу в їжі, воді, захисті, відпочинку, сексуальні потреби.
+    </div>
+
+    <h1 style="text-align: center; height: 60px; margin-top: 15px">Характеристики персонажів</h1>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    Комунікабельність
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+            </div>
+        </div>
+      </div>
 {% endblock content %}
