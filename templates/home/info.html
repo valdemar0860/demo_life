@@ -77,19 +77,19 @@
 
 {% block content %}
     <h1 style="text-align: center; height: 60px; margin-top: 15px">Піраміда Маслоу</h1>
-    <div class="w-25 p-3" style="background: rgb(31, 31, 33); border-radius: 30px; margin-left: 37%" >
+    <div class="w-25 p-3 border" style="background: black; border-radius: 10px; margin-left: 37%">
         Потреби в самовираженні, самореалізації — потреби у здійсненні своїх потенційних можливостей та зростанні як особистості.
     </div>
-    <div class="w-50 p-3" style="background: rgb(31, 31, 33); border-radius: 30px; margin-left: 25%">
+    <div class="w-50 p-3 border" style="background: black; border-radius: 10px; margin-left: 25%">
         Потреби в повазі — маються на увазі потреби в особистих досягненнях, компетентності, повазі з боку оточення, визнанні.
     </div>
-    <div class="w-75 p-3" style="background: rgb(31, 31, 33); border-radius: 30px; margin-left: 12%">
+    <div class="w-75 p-3 border" style="background: black; border-radius: 10px; margin-left: 12%">
         Соціальні потреби (потреби в приналежності, дружбі, любові) передбачають відчуття приналежності до чого-небудь або кого-небудь, підтримки.
     </div>
-    <div class="w-100 p-3" style="background: rgb(31, 31, 33); border-radius: 30px;">
+    <div class="w-100 p-3 border" style="background: black; border-radius: 10px;">
         Потреби в безпеці стосуються потреб в захисті від фізичних і психологічних небезпек з боку навколишнього світу і впевненість у тому, що фізіологічні потреби будуть задовольнятися в майбутньому.
     </div>
-    <div class="w-auto p-3" style="background: rgb(31, 31, 33); border-radius: 30px;">
+    <div class="w-auto p-3 border" style="background: black; border-radius: 10px;">
         Фізіологічні потреби (потреби найнижчого рівня) є необхідними для виживання. Вони охоплюють потребу в їжі, воді, захисті, відпочинку, сексуальні потреби.
     </div>
 
@@ -97,15 +97,209 @@
     <div class="accordion" id="accordionPanelsStayOpenExample">
         <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                <button class="accordion-button collapsed bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
                     Комунікабельність
                 </button>
             </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body bg-dark text-white">
+                    можна розвивати хіба що завдяки розмовам з різного роду людьми, але бажано з фракцією, з якою в майбутньому збираєтесь мати справу.
                 </div>
             </div>
         </div>
-      </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    Інтелект
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body bg-dark text-white">
+                    розвивається завдяки постійному навчанню у різних сферах.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    Авторитет
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body bg-dark text-white">
+                    упевненість навколишніх людей у правильності ваших дій, досягається шляхом обходити та вирішувати різного роду проблеми.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                <button class="accordion-button collapsed bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                    Відомість
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                <div class="accordion-body bg-dark text-white">
+                    ще називається популярністю, досягається завдяки розповсюдженю вашого особистого бренду на велику кількість людей.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                <button class="accordion-button collapsed bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                    Аудиторія
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                <div class="accordion-body bg-dark text-white">
+                    кількість людей, увагу яких можна отримати (оцінюється і кількість і якість), можна використовувати відомість або просто рекламу, залишаючись у тіні. Також можна розвити вивчаючи нові мови.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                <button class="accordion-button collapsed bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                    Знання мов
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+                <div class="accordion-body bg-dark text-white">
+                    як ми бачили у попередньому пункті, та побачимо у наступних, корисна навичка, здатна збільшити аудиторію, кількість можливої інформації та корисних знайомств, а також багато інших бонусів.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+                <button class="accordion-button collapsed bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+                    Переконливість
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven">
+                <div class="accordion-body bg-dark text-white">
+                    відрізняється від комунікабельності тим, що може вирішувати певні задачі, які стоять перед людиною, розвивається завдяки покращенню комунікабельності.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingEight">
+                <button class="accordion-button collapsed bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">
+                    Корисні знайомства
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingEight">
+                <div class="accordion-body bg-dark text-white">
+                    відрізняються можливістю скористатись корисними характеристиками іншої людини, у відповідь потребують від вас якоїсь послуги, або боргу перед корисним знайомим. Можна досягти завдяки підвищеній комунікабельності, іншим корисним знайомствам, розширенню кола знайомств, особливо за рахунок "вищих кіл".
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingNine">
+                <button class="accordion-button collapsed bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">
+                    Інтуіція, бізнес-чуйка, та чуйка надувалова
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingNine">
+                <div class="accordion-body bg-dark text-white">
+                    досить корисні навички для будь-якого гравця, але їх можна досягти лише у процесі гри під час проходження особливих квестів.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTen">
+                <button class="accordion-button collapsed bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false" aria-controls="panelsStayOpen-collapseTen">
+                    Унікальні навички
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTen">
+                <div class="accordion-body bg-dark text-white">
+                    чаще за все стосуються професії отриманої гравцем, відрізняються одна від одної розповсюдженністю, складністю отримання, ресурсами що здатні принести. Як отримуються вказано вище, але чаще за все, ці навички використовуються не підприємцями, які хочуть заробити, а підлеглим їм персоналом, так як зазвичай, допомагають заробити лише на хліб з маслом.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingEleven">
+                <button class="accordion-button collapsed bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEleven" aria-expanded="false" aria-controls="panelsStayOpen-collapseEleven">
+                    Наполеглевість
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseEleven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingEleven">
+                <div class="accordion-body bg-dark text-white">
+                    можливість гравця продовжувати місію, незважаючи на велику кількість перешкод, досягається лише завдяки постійним зусиллям над персонажем.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwelve">
+                <button class="accordion-button collapsed bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwelve" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwelve">
+                    Здатність навчатись
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwelve">
+                <div class="accordion-body bg-dark text-white">
+                    навичка доступна гравцям з непоганим інтелектом та високою наполеглевістю, може допомогти швидше отримати інформацію у цікавлячому направленні, що дасть змогу передбачати важкості, або уникати поганих кампаній. Знання інших мов також можуть допомогти у покращенні цієї навички.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThirteen">
+                <button class="accordion-button collapsed bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThirteen" aria-expanded="false" aria-controls="panelsStayOpen-collapseThirteen">
+                    Зовнішній вигляд
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThirteen" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThirteen">
+                <div class="accordion-body bg-dark text-white">
+                    якщо Вам скажуть що у цій грі його можна ігнорувати - не слухайте цього рака, тому що ця характеристика може полегшити вам дуже велику кількість квестів і краще контактувати з іншими гравцями, підвищити аудиторію та ін.. Можна покращити завдяки дії спорту на організм, уникання нікотину та алкоголю, раджу звертати увагу на чистоту ротової порожнини, тому що вона може виділяти ще і поганий запах.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFourteen">
+                <button class="accordion-button collapsed bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFourteen" aria-expanded="false" aria-controls="panelsStayOpen-collapseFourteen">
+                    Самооцінка
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFourteen" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFourteen">
+                <div class="accordion-body bg-dark text-white">
+                    також досить важлива характеристика, яка може дозволити гравцеві краще заводити нові корисні знайомства, підвищує переконливість, може трохи приховувати низький рівень інтелекту.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFifteen">
+                <button class="accordion-button collapsed bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFifteen" aria-expanded="false" aria-controls="panelsStayOpen-collapseFifteen">
+                    Розуміння психології
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFifteen" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFifteen">
+                <div class="accordion-body bg-dark text-white">
+                    дозволяє розпізнавати та керувати іншим гравцем використовуючи його емоції, вважається досить брудним прийомом, але досить ефективно використовується безпринципними гравцями, які дуже часто стають "сильними світу цього".
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingSixteen">
+                <button class="accordion-button collapsed bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSixteen" aria-expanded="false" aria-controls="panelsStayOpen-collapseSixteen">
+                    ...
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseSixteen" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSixteen">
+                <div class="accordion-body bg-dark text-white">
+                    це далеко не остаточний варіант необхідних характеристик і їх описів.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top: 15px; margin-bottom: 15px">
+        <h1 style="text-align: center">Iнетерпретування піраміди у відповідності з запитами сучасних людей (на основі тих спостережень, що були мені доступні)</h1>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item bg-black text-white">Я не бачу жодних проблем з їжею та водою, старші гравці вже досить давно вирішили цю проблему.</li>
+        <li class="list-group-item bg-black text-white">Проблемою захисту замість нас турбується держава та різні охоронні бюро. Хоча іноді може здатись що правоохоронні органи даром отримують ресурси на хліб, але це можна повернути у власну сторону.</li>
+        <li class="list-group-item bg-black text-white">Далі йдуть секс та відпочинок, і це досить цікаво. Завдяки тому, що останнім часом багато проблем, на які раніше гравці витрачали багато часу були вирішені, і у сучасних гравців є більше вільного часу, ця ніша стала досить великою, і не повністю заповненою.</li>
+        <li class="list-group-item bg-black text-white">Захист і надання впевненості у майбутньому гравцям має досить високий рівень входу, через те, що для цього потрбіно досить велика кількість ресурсів та характеристик по типу авторитету.</li>
+        <li class="list-group-item bg-black text-white">Принадлежність, любов, дружба. Ці потреби торкаються емоцій гравців, на яких досить просто спекулювати, особливо якщо ви розумієтесь у психології. Частіше за все використовується саме принадлежність, тому що, вона більш масова, через що може приносити більше вигоди гравцеві що використовує цю потребність.</li>
+        <li class="list-group-item bg-black text-white">Потреба у повазі та увазі, чаще всього використовується для отримання корисних зв'язків та покращення характеристики переконливості, тому що цю потребу досить важко використовувати для широких мас гравців.</li>
+        <li class="list-group-item bg-black text-white">Потреба у самовираженні часто називаєма просто амбіціями людини. Так як ця потреба знаходиться на самій вершині піраміди - потребу цю відчувають лише люди, що задовольнили усі попередні, але ми живемо в 21 сторіччі, і небагато людей зараз знають що таке голод, тому саме цю потребу, знають люди те, чи ні, вони хочуть задовольнити найбільше.</li>
+    </ul>
+    <br>
 {% endblock content %}
