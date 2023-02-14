@@ -1,0 +1,31 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block content %}
+<h1>To-Do Application</h1>
+
+<h2>Standing Tasks</h2>
+<form action="{% url 'task_list' %}" method="post">
+  {% csrf_token %}
+  {% for task in permanent_tasks %}
+  <div>
+    <input type="checkbox" name="completed_tasks" value="{{ task.id }}" {% if task.is_completed %}checked{% endif %}>
+    <input type="text" name="task_{{ task.id }}" value="{{ task.title }}">
+  </div>
+  {% endfor %}
+  <input type="submit" value="Update">
+</form>
+
+<h2>Regular Tasks</h2>
+<form action="{% url 'task_list' %}" method="post">
+  {% csrf_token %}
+  {% for task in temporary_tasks %}
+  <div>
+    <input type="checkbox" name="completed_tasks" value="{{ task.id }}" {% if task.is_completed %}checked{% endif %}>
+    <input type="text" name="task_{{ task.id }}" value="{{ task.title }}">
+  </div>
+  {% endfor %}
+  <input type="text" name="new_task">
+  <input type="submit" value="Add Task">
+</form>
+{% endblock %}
