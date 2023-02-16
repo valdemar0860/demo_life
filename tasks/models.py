@@ -3,6 +3,7 @@ from django.utils import timezone
 
 from django.db import models
 
+
 class Task(models.Model):
     title = models.CharField(max_length=255, default='title')
     text = models.TextField(default='text')

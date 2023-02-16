@@ -1,7 +1,8 @@
-# from django import forms
-# from .models import Task
+from django import forms
+from .models import Task
 
-# class TaskForm(forms.ModelForm):
-#     class Meta:
-#         model = Task
-#         fields = ['text']
+
+class TaskForm(forms.ModelForm):
+    class Meta:
+        model = Task
+        fields = ['title', 'text', 'is_completed', 'priority', 'task_date']
