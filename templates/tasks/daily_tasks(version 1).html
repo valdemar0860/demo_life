@@ -1,0 +1,53 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block title %}Daily tasks{% endblock title %}
+
+{% block content %}
+{#    <script src="{% static 'home/js/autosave.js' %}"></script>#}
+    <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-xl-10">
+            <br>
+            <div class="card bg-dark border-white rounded-4">
+                <br>
+                <div style="text-align: center" class="border-bottom">
+                    <h2>Постійні задачі</h2>
+                </div>
+                <br>
+                {% for task in object_list %}
+                    {% if task.is_permanent %}
+                        <div style="text-align: center" draggable="true">
+                            <form method="post" id="permanent-form">
+                                {% csrf_token %}
+                                <input class="form-check-input me-2 border-dark" type="checkbox" name="checkbox_{{ task.pk }}" value="on" aria-label="..." {% if task.is_completed %}checked{% endif %}>
+                                <input style="width: 90%; border-radius: 10px; margin-bottom: 7px; cursor: grab" type="text" name="title_{{ task.pk }}" value="{{ task.title }}">
+                            </form>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+                <br>
+            </div>
+            <br>
+            <div class="card bg-dark border-white rounded-4">
+                <br>
+                <div style="text-align: center" class="border-bottom">
+                    <h2>Тимчасові задачі</h2>
+                </div>
+                <br>
+                    {% for task in object_list %}
+                        {% if not task.is_permanent %}
+                            <div style="text-align: center" draggable="true">
+                                <form method="post" id="temporary-form">
+                                {% csrf_token %}
+                                    <input class="form-check-input me-2 border-dark" type="checkbox" name="checkbox_{{ task.pk }}" value="on" aria-label="..." {% if task.is_completed %}checked{% endif %}>
+                                    <input style="width: 90%; border-radius: 10px; margin-bottom: 7px; cursor: grab" type="text" name="title_{{ task.pk }}" value="{{ task.title }}">
+                                </form>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                    <br>
+                </div>
+            <br>
+        </div>
+    </div>
+{% endblock %}

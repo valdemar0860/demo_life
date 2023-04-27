@@ -130,3 +130,6 @@ dmypy.json
 
 # my files
 mocups/
+
+#idea
+.idea/

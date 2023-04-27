@@ -1,0 +1,63 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block title %}Demo Life{% endblock title %}
+
+{% block content %}
+<script src="{% static 'home/js/dragdrop.js' %}"></script>
+<script>
+    function checkbox_true(id) {
+        var checkbox = document.getElementById("checkbox_" + id);
+        checkbox.checked = true;
+      }
+</script>
+
+<div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-xl-10">
+            <div class="card bg-dark border-white rounded-4">
+                <div class="card-body p-5">
+                    <h2>Постійні задачі</h2>
+                    <form method="post" action="{% url 'task_list' %}"></form>
+                        {% csrf_token %}
+                        {% for task in permanent_tasks %}
+                        <div id="item{{ task.pk }}" draggable="true">
+                            <input class="form-check-input me-2 border-dark" type="checkbox" name="checkbox{{task.pk}}" value="on" aria-label="..." />
+                            <input style="width: 90%; border-radius: 10px; margin-bottom: 7px; cursor: grab" type="text" name="title" placeholder="{{ task.title }}">
+                                <!-- {{ task.title }} -->
+                        </div>
+                        {% endfor %}
+                        <input type="submit" name="form1_submit" value="Зберегти">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Temporary tasks -->
+        <div class="col col-xl-10">
+            <div class="card bg-dark border-white rounded-4">
+                <div class="card-body p-5">
+                    <h2>Тимчасові завдання</h2>
+                    <form method="post" action="{% url 'task_list' %}">
+                        {% csrf_token %}
+                        {% for task in temporary_tasks %}
+                            <div id="item_{{ task.pk }}" draggable="true">
+                                {% if task.is_completed %}
+                                    <input class="form-check-input me-2 border-dark" type="checkbox" name="checkbox_{{ task.pk }}" value="on" aria-label="..." checked="true"/>
+                                {% else %}
+                                    <input class="form-check-input me-2 border-dark" type="checkbox" name="checkbox_{{ task.pk }}" value="on" aria-label="..."/>
+                                {% endif %}
+                                <input style="width: 90%; border-radius: 10px; margin-bottom: 7px; cursor: grab" type="text" name="title_{{ task.pk }}" placeholder="{{ task.title }}">
+                            </div>
+                        {% endfor %}
+                        <input type="submit" name="form2_submit" value="Зберегти">
+                    </form>
+                </div>
+            </div>
+            <div id="target">
+                <H2>trash</H2>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
